@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.Composition;
 using Microsoft.Crm.Sdk.Messages;
 using XrmToolBox.Extensibility;
+using XrmToolBox.Extensibility.Interfaces;
 
 namespace DS.XrmToolBox.DynamicsMap
 {
-    [Export(typeof(PluginControlBase))]
+    [Export(typeof(IXrmToolBoxPlugin))]
     [ExportMetadata("Name", "Dynamics Map")]
     [ExportMetadata(
         "Description",
