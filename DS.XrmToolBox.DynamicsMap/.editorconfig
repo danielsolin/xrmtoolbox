@@ -1,0 +1,53 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8-bom
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 80
+
+[*.md]
+# Allow trailing spaces for markdown tables, but keep width guidance
+trim_trailing_whitespace = false
+max_line_length = 80
+
+[*.cs]
+# Enforce formatting suggestions in IDE and CI formatters
+# (line-length itself is advisory; wrapping is guided by options below)
+dotnet_diagnostic.IDE0055.severity = warning
+
+# Prefer multi-line formatting over single-line to reduce long lines
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = false
+
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_between_query_expression_clauses = true
+
+# Place attributes on their own lines for shorter member signatures
+csharp_place_attribute_on_same_line = false
+csharp_place_field_attribute_on_same_line = false
+csharp_place_property_attribute_on_same_line = false
+csharp_place_method_attribute_on_same_line = false
+
+# var preferences (style)
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_elsewhere = true:suggestion
+
+# Expression-bodied members
+csharp_style_expression_bodied_methods = when_on_single_line:suggestion
+csharp_style_expression_bodied_properties = when_on_single_line:suggestion
+csharp_style_expression_bodied_operators = when_on_single_line:suggestion
+
+# Qualification
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+
+# Using directives
+dotnet_sort_system_directives_first = true
+file_header_template = unset

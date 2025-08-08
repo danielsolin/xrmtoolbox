@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.XrmToolBox.DynamicsMap", "DS.XrmToolBox.DynamicsMap.csproj", "{586D338A-48CE-7D06-6F67-38A009D715B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586D338A-48CE-7D06-6F67-38A009D715B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586D338A-48CE-7D06-6F67-38A009D715B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586D338A-48CE-7D06-6F67-38A009D715B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586D338A-48CE-7D06-6F67-38A009D715B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBE8252C-3F85-4668-9138-64C1260BDFEA}
+	EndGlobalSection
+EndGlobal

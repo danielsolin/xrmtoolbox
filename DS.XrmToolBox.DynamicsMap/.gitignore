@@ -1,0 +1,25 @@
+# Build artifacts
+bin/
+obj/
+
+# VS/VSCode
+.vs/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# Packages
+packages/
+*.nupkg
+
+# Logs
+*.log
+
+# Other
+_TestResults*/
+TestResults/
+*.cache
+*.dbmdl
+*.jfm
+*.ide

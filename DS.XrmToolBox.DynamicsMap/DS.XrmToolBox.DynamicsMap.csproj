@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- XrmToolBox extensibility API and Dataverse SDK -->
+    <PackageReference Include="XrmToolBoxPackage" Version="1.*" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies"
+                      Version="9.*" />
+    <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly"
+                      Version="9.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- MEF (Managed Extensibility Framework) attributes -->
+    <Reference Include="System.ComponentModel.Composition" />
+  </ItemGroup>
+</Project>
